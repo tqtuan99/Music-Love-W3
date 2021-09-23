@@ -1,0 +1,63 @@
+/* Reset CSS */
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+html{
+   font-family: Helvetica,Arial, sans-serif;
+}
+
+/* 
+1. Vị trí
+2. Kích thước
+3. Màu sắc
+4. Kiểu dáng
+ */
+
+#main {
+
+}
+
+#header {
+   height: 46px;
+   background-color: black;
+}
+
+#nav {
+
+}
+
+#nav li {
+   display: inline-block;
+}
+
+#nav li a {
+   color: #fff;
+   text-decoration: none;
+   line-height: 46px;
+   padding: 0 24px;
+   display: inline-block;
+}
+
+#nav li:hover a {
+   color: #000;
+   background-color: #fff;
+}
+
+#nav .subnav{
+display: none;
+}
+
+#slider {
+
+}
+
+#content {
+
+}
+
+#footer {
+
+}
