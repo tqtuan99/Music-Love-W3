@@ -54,6 +54,7 @@ html{
 
 #nav > li:hover .subnav {
    display: block;
+   
 }
 
 #nav .subnav li:hover,
