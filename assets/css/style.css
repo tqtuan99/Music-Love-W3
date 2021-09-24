@@ -23,6 +23,16 @@ html{
 #header {
    height: 46px;
    background-color: black;
+   position: fixed;
+   /* position: fixed -> cố định so với trình duyệt khi bị cuộn không bị trôi */
+   top: 0;
+   right: 0;
+   left: 0;
+   z-index: 1;
+}
+
+#nav{
+   display: inline-block;
 }
 
 #nav, .subnav {
@@ -79,10 +89,62 @@ html{
    line-height: 38px;
 }
 
-#slider {
-   min-height: 500px;
-   background-color: #333;
+#nav .nav-arrow-down {
+   font-size: 13px;
 }
+
+#header .search-btn:hover {
+   background-color: #f44336;
+   cursor: pointer;
+
+}
+
+#header .search-btn {
+   float: right ;
+   /* Ép button search vào góc phải header */
+   padding: 0 23px;
+
+}
+
+#header .search-icon {
+   line-height: 46px;
+   color: #fff;
+   font-size: 20px;
+}
+
+#slider {
+   margin-top: 46px;
+   padding-top: 50%;
+   /* *phần đệm phía trên bằng tổng 50% chiều rộng của chính nó */
+   background: url('/assets/img/slider/slider1.jpg') top center / cover no-repeat;
+   position: relative;
+}
+
+#slider .text-content {
+   position: absolute;
+   color: #fff;
+   text-align: center;
+   bottom: 48px;
+   /* left: 50%;
+   transform: translateX(-50%); */
+   /* left: 0;
+   right: 0; */
+   /* *3 cách dùng để canh giữa */
+
+   width: 100%;
+
+}
+
+#slider .text-heading {
+   font-weight: 500;
+   font-size: 24px;
+}
+
+#slider .text-description {
+   margin-top: 25px;
+   font-size: 15px;
+}
+
 
 #content {
 
