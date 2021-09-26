@@ -7,6 +7,7 @@
 
 html{
    font-family: Helvetica,Arial, sans-serif;
+   line-height: 1.5;
 }
 
 /* 
@@ -15,6 +16,14 @@ html{
 3. Màu sắc
 4. Kiểu dáng
  */
+.clear {
+   clear: both;
+}
+
+.text-white {
+   color: #fff !important;
+   /* *Độ ưu tiên trong css: !important là mạnh nhất */
+}
 
 #main {
 
@@ -137,6 +146,7 @@ html{
 
 #slider .text-heading {
    font-weight: 500;
+   /* *Làm mỏng chữ */
    font-size: 24px;
 }
 
@@ -147,7 +157,99 @@ html{
 
 
 #content {
+   
+}
 
+#content .content-section {
+   width: 800px;
+   margin: auto auto;
+   padding: 64px 0;
+}
+
+#content .section-heading {
+   font-size: 30px;
+   font-weight: 400;
+   text-align: center;
+   margin: 10px 0;
+   font-family: 'Segoe UI', Arial, Verdana, sans-serif;
+   letter-spacing: 4px;
+   
+}
+
+#content .section-sub-heading {
+   text-align: center;
+   margin: 15px 0;
+   font-size: 15px;
+   opacity: 0.6;
+}
+
+#content .about-text {
+   text-align: justify;
+   font-size: 15px;
+}
+
+#content .member-list {
+   padding: 32px 0;
+   text-align: center;
+   /* overflow: hidden: cũng để giải quyết tình trạng float: left */
+}
+
+#content .member-item {
+   float: left;
+   /* width: 33.33333%; */
+   width: calc(100% / 3);
+}
+
+#content .member-name {
+   margin: 15px 0;
+   font-size: 15px;
+}
+
+#content .member-img {
+   width: 154px;
+   height: 154px;
+   border-radius: 7px;
+   margin: 0 0 16px;
+   /* *border-radius: tạo đường bo góc */
+}
+
+/* *TOUR section */
+.tour-section {
+   background-color: #000;
+}
+
+.tickets-list {
+   list-style-type: none;
+   background-color: #fff;
+   margin-top: 40px;
+}
+.tickets-list li{
+   border-bottom: 1px solid #ddd;
+   height: 40px;
+   padding: 8px 16px;
+   color: #757575;
+   font-size: 15px;
+
+}
+
+.tickets-list .sold-out {
+   color: #fff;
+   background-color: #f44336;
+   margin-left: 16px;
+   padding: 3px 8px;
+
+}
+
+.tickets-list .quantity {
+   width: 24px;
+   height: 24px;
+   margin-right: 16px;
+   padding: 0 8px;
+   border-radius: 50%;
+   background-color: #000;
+   color: #fff;
+   float: right;
+   text-align: center;
 }
 
 #footer {

@@ -4,7 +4,7 @@ I. Phân tích
    3. Content
       3.1 About
       3.2 Tour
-      3.3 Image
-      3.4 Footer
+      3.3 Contact
+      3.4 Image
    4. Footer
 II. Dựng base
