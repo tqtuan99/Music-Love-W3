@@ -55,6 +55,8 @@ html{
 
 #nav li {
    position: relative;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Times, serif;
+   font-weight: 400;
 }
 
 #nav > li > a {
@@ -64,6 +66,7 @@ html{
 }
 
 #nav li a {
+   /* text-decoration: none; bỏ gạch dưới ở thẻ <a> */
    text-decoration: none;
    line-height: 46px;
    padding: 0 24px;
@@ -105,6 +108,7 @@ html{
 #header .search-btn:hover {
    background-color: #f44336;
    cursor: pointer;
+   /* re chuột vào đổi thành bàn tay và có background màu đỏ */
 
 }
 
@@ -139,7 +143,6 @@ html{
    /* left: 0;
    right: 0; */
    /* *3 cách dùng để canh giữa */
-
    width: 100%;
 
 }
@@ -163,7 +166,7 @@ html{
 #content .content-section {
    width: 800px;
    margin: auto auto;
-   padding: 64px 0;
+   padding: 64px 16px;
 }
 
 #content .section-heading {
@@ -173,7 +176,6 @@ html{
    margin: 10px 0;
    font-family: 'Segoe UI', Arial, Verdana, sans-serif;
    letter-spacing: 4px;
-   
 }
 
 #content .section-sub-heading {
@@ -184,6 +186,7 @@ html{
 }
 
 #content .about-text {
+   /* Canh lề 2 bên */
    text-align: justify;
    font-size: 15px;
 }
@@ -250,6 +253,70 @@ html{
    color: #fff;
    float: right;
    text-align: center;
+}
+
+/* !Places Tour */
+
+.places-list {
+   margin: 0px -16px;
+   padding: 48px 8px;
+   /* Kỹ thuật pha trộn margin âm và padding để cân bằng lề */
+}
+
+.places-item {
+   float: left;
+   width: 33.33333%;
+   padding: 0 8px;
+}
+
+.place-img {
+   /* width: 244.5px; */
+   height: 184px;
+   width: 100%;
+   display: block;
+   /* display: block để loại bỏ khoảng trống do inline tạo nên */
+}
+
+.place-img:hover {
+   opacity: 0.6;
+   /* re chuột vào làm mờ ảnh 0.6 */
+}
+
+
+.place-body {
+   color: #000;
+   background-color: #fff;
+   padding: 16px;
+   font-size: 15px;
+}
+
+.place-head {
+
+}
+
+.place-time {
+   margin: 15px 0;
+   opacity: 0.6;
+}
+.place-desc {
+   margin: 15px 0;
+   line-height: 1.4;
+}
+.place-buy-btn {
+   border-radius: 7px;
+   padding: 8px 16px;
+   background-color: #000;
+   color: #fff;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 14.5px;
+   text-align: center;
+   margin: 0 53px
+}
+
+.place-buy-btn:hover {
+   color: #000;
+   background-color: #ccc;
 }
 
 #footer {
