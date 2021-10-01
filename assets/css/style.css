@@ -16,6 +16,8 @@ html{
 3. Màu sắc
 4. Kiểu dáng
  */
+
+ /* !Common: những cái chung */
 .clear {
    clear: both;
 }
@@ -25,6 +27,37 @@ html{
    /* *Độ ưu tiên trong css: !important là mạnh nhất */
 }
 
+.text-center {
+   text-align: center !important; 
+}
+
+.row{
+   margin-left: -16px;
+   margin-right: -16px;
+}
+
+.col {
+   float: left;
+   padding: 0 8px;
+}
+
+.col-full {
+   width: 100%;
+}
+
+.col-second {
+   width: 50%;
+}
+
+.col-third {
+   width: 33.33333333%;
+}
+/* *Một khi đã dùng class col,row thì không dùng các thuộc tính ghè đề lại, vd: khi dùng col-second thì css lại thuộc tính WIDTH
+   !Muốn css lại thuộc tính đó tạo một thẻ <> rồi css riêng cho nó */
+
+
+
+/* !Main */
 #main {
 
 }
@@ -193,14 +226,15 @@ html{
 
 #content .member-list {
    padding: 32px 0;
-   text-align: center;
    /* overflow: hidden: cũng để giải quyết tình trạng float: left */
 }
 
 #content .member-item {
-   float: left;
-   /* width: 33.33333%; */
+   /* float: left;
+   width: 33.33333%;
    width: calc(100% / 3);
+   text-align: center; */
+   /* *thay thế bằng class col, col-third, text-center   */
 }
 
 #content .member-name {
@@ -258,15 +292,16 @@ html{
 /* !Places Tour */
 
 .places-list {
-   margin: 0px -16px;
+   /* margin: 0px -16px; thay thế bởi class row */
    padding: 48px 8px;
    /* Kỹ thuật pha trộn margin âm và padding để cân bằng lề */
 }
 
 .places-item {
-   float: left;
-   width: 33.33333%;
-   padding: 0 8px;
+   /* float: left; */
+   /* width: 33.33333%;: thay thế bằng class col-third */
+   /* padding: 0 8px; */
+   /* Thay thế bằng class col */
 }
 
 .place-img {
@@ -279,6 +314,7 @@ html{
 
 .place-img:hover {
    opacity: 0.6;
+   /* transform: scale(1,1); */
    /* re chuột vào làm mờ ảnh 0.6 */
 }
 
@@ -319,6 +355,26 @@ html{
    background-color: #ccc;
 }
 
-#footer {
+.map-img img{
+   width: 100%;
+   vertical-align: middle;
+   filter: grayscale(50%);
+}
 
+#footer {
+   margin: 70px 0;
+}
+
+#footer .item-list {  
+   text-align: center;
+   font-size: 30px;
+}
+
+.item-list i:hover {
+   opacity: 0.6;
+}
+
+#footer .power {
+   color: #757575;
+   text-align: center;
 }
