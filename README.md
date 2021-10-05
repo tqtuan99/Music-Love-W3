@@ -1,12 +1,10 @@
-<h1 align="center">  LOVE MUSIC W3 🎸🎷 </h1>
-
----
-
+# LOVE MUSIC W3 🎸🎷
 
 
 ### This is one of the small projects about learning HTML, CSS.
 
 ---
+
 
 | Project        | Language  | Source   | Status |
 |:--------------:|:---------:|:--------:|:------:|
