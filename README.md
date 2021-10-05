@@ -15,8 +15,4 @@
 | *`Web Store`*  | HTML, CSS | ...      | ...    |
 | ...            |           |          |        |
 
-```markdown
-![alt](https://github.com/tqtuan99/Music-Love-W3/blob/master/assets/img/map/love-music.PNG)
-```
-
 
