@@ -2,8 +2,6 @@
 
 ---
 
-
-
 ### This is one of the small projects about learning HTML, CSS.
 
 ---
@@ -15,4 +13,4 @@
 | *`Web Store`*  | HTML, CSS | ...      | ...    |
 | ...            |           |          |        |
 
-
+[img · Issue #1 · tqtuan99/Music-Love-W3 · GitHub](https://github.com/tqtuan99/Music-Love-W3/issues/1#issue-1016162982)
