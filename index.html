@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-   <link rel="icon" href="./assets/img/logo/klt.ico">
+   <link rel="icon" href="./assets/img/logo/logo-ht64px.png">
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -85,7 +85,7 @@
                   <img src="./assets/img/member-band/member2.jpg" alt="Top" class="member-img">
                </div>
 
-               <div class="clear"></div>
+               <div class="clear"></div> 
                <!-- *do float: left chiếm hết khối thẻ <div> cha bao bọc nó, nên css cho class clear để giải quyết-->
             </div>
          </div>
@@ -109,7 +109,7 @@
                         <p class="place-head"><b>New York</b></p>
                         <p class="place-time">Fri 27 Nov 2016</p>
                         <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                        <a href="#" class="place-buy-btn">Buy Tickets</a>
+                        <a href="#" class="btn">Buy Tickets</a>
                      </div>
                   </div>
 
@@ -119,7 +119,7 @@
                         <p class="place-head"><b>Sai Gon</b></p>
                         <p class="place-time">Fri 27 Nov 2016</p>
                         <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                        <a href="#" class="place-buy-btn">Buy Tickets</a>
+                        <a href="#" class="btn">Buy Tickets</a>
                      </div>
                   </div>
 
@@ -129,7 +129,7 @@
                         <p class="place-head"><b>Paris</b></p>
                         <p class="place-time">Fri 27 Nov 2016</p>
                         <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                        <a href="#" class="place-buy-btn">Buy Tickets</a>
+                        <a href="#" class="btn">Buy Tickets</a>
                         
                      </div>
                   </div>
@@ -144,39 +144,40 @@
          <div class="content-section">
             <h2 class="section-heading">CONTACT</h2>
             <p class="section-sub-heading"><i>Fan? Drop a note!</i></p>
-            <div class="row">
-               <div class="col col-second">
-                <p><i class="ti-location-pin">Da Nang, Viet Nam</i></p>
-                <p><i class="ti-mobile">Phone: +84 39 656 8281</i></p>
-                <p><i class="ti-email">Email: quoctuancr1010@gmail.com</i></p>
+            <div class="row contact-content">
+               <div class="col col-second contact-info">
+                <p><i class="ti-location-pin"></i>Da Nang, Viet Nam</p>
+                <p><i class="ti-mobile"></i>Phone: +84 39.656.8281</p>
+                <p><i class="ti-email"></i>Email: quoctuancr1010@gmail.com</p>
                </div>
 
-               <div class="col col-second">
+               <div class="col col-second contact-form">
                   <form action="">
-                     <div class="row">
+                     <div class="row contact-t">
                         <div class="col col-second">
-                           <input type="text" name="Name" placeholder="Name" id="" class="form-control">
+                           <input type="text" name="Name" placeholder="Name" required id="" class="form-control">
                         </div>
                         <div class="col col-second">
-                           <input type="email" name="Email" placeholder="Email" id="" class="form-control">
+                           <input type="email" name="Email" placeholder="Email" required id="" class="form-control">
                         </div>
                      </div>
-                     <div class="row">
+                     <div class="row contact-t">
                         <div class="col col-full">
-                           <input type="text" name="" <input type="text" name="" placeholder="Message" id="" class="form-control">
+                           <input type="text" name="" placeholder="Message" required id="" class="form-control">
+                           <!-- *required: cảnh báo khi không nhập -->
                         </div>
-                        <div class="col">
-                        <input type="submit" value="Send">
+                        </div>
+                        <input class="btn pull-right" type="submit" value="SEND">
+
                         </div>
                      </div>
                   </form>
                </div>
             </div>
-         <div class="clear"></div>
       </div>
-      <div class="map-img">
-         <img src="./assets/img/map/map-street.jpg" alt="">
-      </div>
+
+         <img src="./assets/img/map/map-street.jpg" alt="map street">
+
       <div id="footer">
          <div class="item-list">
             <i class="ti-facebook"></i>
