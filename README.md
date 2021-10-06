@@ -23,6 +23,5 @@ This is [my website](google.com)
 
 > `Image my web`
 
-<img src="https://user-images.githubusercontent.com/55221561/136008334-f51e1fed-2d57-4fd4-b543-2aef2ff554fc.PNG" title="" alt="love-music" data-align="center">
 
 
