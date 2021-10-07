@@ -86,14 +86,8 @@ html {
    width: 33.33333333%;
 }
 
-.modal-btn:hover {
-   color: #000;
-   background-color: #ccc;
-}
-
 /* *Một khi đã dùng class col,row thì không dùng các thuộc tính ghè đề lại, vd: khi dùng col-second thì không css lại thuộc tính WIDTH
-   !Muốn css lại thuộc tính đó tạo một thẻ <> rồi css riêng cho nó */
-
+!Muốn css lại thuộc tính đó tạo một thẻ <> rồi css riêng cho nó */
 
 
 /* !Main */
