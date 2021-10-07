@@ -6,6 +6,8 @@
 }
 
 html {
+   /* *scroll-behavior: smooth: hành vi khi cuộn (smooth: hiệu ứng lướt sóng) */
+   scroll-behavior: smooth;
    font-family: Helvetica, Arial, sans-serif;
    line-height: 1.5;
 }
@@ -32,7 +34,7 @@ html {
 }
 
 .pull-right {
-   float: right !important; 
+   float: right !important;
    margin-top: 10px !important;
 }
 
@@ -82,6 +84,11 @@ html {
 
 .col-third {
    width: 33.33333333%;
+}
+
+.modal-btn:hover {
+   color: #000;
+   background-color: #ccc;
 }
 
 /* *Một khi đã dùng class col,row thì không dùng các thuộc tính ghè đề lại, vd: khi dùng col-second thì không css lại thuộc tính WIDTH
@@ -422,9 +429,6 @@ html {
    cursor: pointer;
 } */
 
-.map-img {
-   display: inline-block;
-}
 
 img {
    width: 100%;
@@ -442,11 +446,108 @@ img {
    font-size: 30px;
 }
 
+#footer .copyright a:hover,
 .item-list i:hover {
    opacity: 0.6;
 }
 
-#footer .power {
+#footer .copyright {
    color: #757575;
    text-align: center;
+}
+
+.modal {
+   position: fixed;
+   top: 0;
+   right: 0;
+   left: 0;
+   bottom: 0;
+   background-color: rgba(0, 0, 0, 0.4);
+   /* *display: flex: để có thể css cho con của modal (ở đây là container)   */
+   align-items: center;
+   justify-content: center;
+   display: none;
+}
+
+/* ?một thẻ vừa có class modal vừa có class open thì mới được css */
+.modal.open {
+   display: flex;
+
+}
+
+.modal-container {
+   background: #fff;
+   width: 900px;
+   /* *max-width: calc(100%-60px): khi thu nhỏ màn hình lại chiều rộng tối đa của container là mỗi bên cách màn hình 30px */
+   max-width: calc(100% - 120px);
+   min-height: 200px;
+   position: relative;
+}
+
+.modal-close .ti-close {
+   position: absolute;
+   right: 0;
+   top: 0;
+   color: #fff;
+   padding: 12px;
+   cursor: pointer;
+}
+
+.modal-close .ti-close:hover {
+   color: #000;
+   background-color: rgb(233, 59, 59);
+}
+
+header.modal-header {
+   background-color: #009688;
+   height: 129px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 30px;
+   color: #fff
+}
+
+.modal-body {
+   padding: 16px;
+   font-size: 15px;
+}
+
+label.modal-lable {
+   display: block;
+   margin-bottom: 8px;
+}
+
+.modal-input {
+   border: 1px solid #ccc;
+   width: 100%;
+   padding: 11px;
+   margin-bottom: 25px;
+}
+
+#buy-tickets {
+   width: 100%;
+   padding: 13px;
+   margin: 18px 0;
+   background-color: #009688;
+   border: 1px;
+   color: #fff;
+   border-radius: 7px;
+   cursor: pointer;
+   font-weight: bolder;
+}
+
+#buy-tickets:hover {
+   opacity: 0.7;
+}
+
+footer.modal-footer {
+   padding: 0 16px;
+   float: right;
+   margin-bottom: 34px;
+}
+
+.modal-footer a {
+   text-decoration: none;
+   color: blue;
 }

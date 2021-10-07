@@ -17,10 +17,11 @@
 
          <!-- ?Star: nav -->
          <ul id="nav">
-            <li><a href="">Home</a></li>
-            <li><a href="">Band</a></li>
-            <li><a href="">Tour</a></li>
-            <li><a href="">Contact</a></li>
+            <!-- * # sẽ về trang chủ, nếu ko để đường dẫn sẽ bị reload lại trang -->
+            <li><a href="#">Home</a></li>
+            <li><a href="#band">Band</a></li>
+            <li><a href="#tour">Tour</a></li>
+            <li><a href="#contact">Contact</a></li>
 
             <li>
                <a href="#">
@@ -28,9 +29,9 @@
                   <i class="nav-arrow-down ti-angle-down"></i>
                </a>
                <ul class="subnav">
-                  <li><a href="">Merchandise</a></li>
-                  <li><a href="">Extras</a></li>
-                  <li><a href="">Media</a></li>
+                  <li><a href="#">Merchandise</a></li>
+                  <li><a href="#">Extras</a></li>
+                  <li><a href="#">Media</a></li>
                </ul>
             </li>
 
@@ -58,7 +59,7 @@
       <div id="content">
 
          <!-- *About section -->
-         <div class="content-section">
+         <div id="band" class="content-section">
             <h2 class="section-heading">THE BAND</h2>
             <p class="section-sub-heading"><i>We love music</i></p>
             <p class="about-text">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur
@@ -85,20 +86,20 @@
                   <img src="./assets/img/member-band/member2.jpg" alt="Top" class="member-img">
                </div>
 
-               <div class="clear"></div> 
+               <div class="clear"></div>
                <!-- *do float: left chiếm hết khối thẻ <div> cha bao bọc nó, nên css cho class clear để giải quyết-->
             </div>
          </div>
 
          <!-- *Tour section -->
-         <div class="tour-section">
+         <div id="tour" class="tour-section">
             <div class="content-section">
                <h2 class="section-heading text-white">TOUR DATES</h2>
                <p class="section-sub-heading text-white"><i>Remember to book your tickets!</i></p>
                <ul class="tickets-list">
                   <li>September <span class="sold-out">Sold out</span></li>
                   <li>October <span class="sold-out">Sold out</span></li>
-                  <li>November <span class="quantity" >3</span></li>
+                  <li>November <span class="quantity">3</span></li>
                </ul>
 
                <!-- *Places -->
@@ -130,53 +131,56 @@
                         <p class="place-time">Fri 27 Nov 2016</p>
                         <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
                         <a href="#" class="btn">Buy Tickets</a>
-                        
+
                      </div>
                   </div>
 
                   <div class="clear"></div>
                </div>
-               
+
             </div>
          </div>
 
          <!-- *Contact section -->
-         <div class="content-section">
+         <div id="contact" class="content-section">
             <h2 class="section-heading">CONTACT</h2>
             <p class="section-sub-heading"><i>Fan? Drop a note!</i></p>
             <div class="row contact-content">
                <div class="col col-second contact-info">
-                <p><i class="ti-location-pin"></i>Da Nang, Viet Nam</p>
-                <p><i class="ti-mobile"></i>Phone: +84 39.656.8281</p>
-                <p><i class="ti-email"></i>Email: quoctuancr1010@gmail.com</p>
+                  <p><i class="ti-location-pin"></i>Da Nang, Viet Nam</p>
+                  <p><i class="ti-mobile"></i>Phone: +84 39.656.8281</p>
+                  <p><i class="ti-email"></i>Email: quoctuancr1010@gmail.com</p>
                </div>
 
                <div class="col col-second contact-form">
                   <form action="">
                      <div class="row contact-t">
                         <div class="col col-second">
-                           <input type="text" name="Name" placeholder="Name" required id="" class="form-control">
+                           <input type="text" name="Name" placeholder="Name" required id="contact-name"
+                              class="form-control">
                         </div>
                         <div class="col col-second">
-                           <input type="email" name="Email" placeholder="Email" required id="" class="form-control">
+                           <input type="email" name="Email" placeholder="Email" required id="contact-email"
+                              class="form-control">
                         </div>
                      </div>
                      <div class="row contact-t">
                         <div class="col col-full">
-                           <input type="text" name="" placeholder="Message" required id="" class="form-control">
+                           <input type="text" name="" placeholder="Message" required id="contact-message"
+                              class="form-control">
                            <!-- *required: cảnh báo khi không nhập -->
                         </div>
-                        </div>
-                        <input class="btn pull-right" type="submit" value="SEND">
-
-                        </div>
                      </div>
-                  </form>
+                     <input class="btn pull-right" type="submit" value="SEND">
+
                </div>
             </div>
+            </form>
+         </div>
+         <!-- * End: Contact section -->
       </div>
 
-         <img src="./assets/img/map/map-street.jpg" alt="map street">
+      <img src="./assets/img/map/map-street.jpg" alt="map street">
 
       <div id="footer">
          <div class="item-list">
@@ -187,11 +191,45 @@
             <i class="ti-twitter"></i>
             <i class="ti-linkedin"></i>
          </div>
-         <div class="power">
-            <p>Powered by <a style="color: #757575;" href="#">tqtuan99</a></p>
-         </div>
+         <p class="copyright">Powered by <a style="color: #757575;" href="#">tqtuan99</a></p>
       </div>
+   </div>
 
+   <!-- *Modal: là định nghĩa giao diện cho tất cả các khung kiểu nằm đè 1 lên khung khác (vd: khung đăng bài của fb trên PC ) -->
+   <div class="modal">
+      <div class="modal-container">
+         <div class="modal-close">
+            <i class="ti-close"></i>
+         </div>
+         <header class="modal-header">
+            <i class="ti-bag" style="margin-right: 16px"></i>
+            Tickets
+         </header>
+
+         <div class="modal-body">
+            <!-- ?for="" trong thẻ lable để đặt id(#) khi nhấn vào lablr trỏ chuột tự động xún vào ô nhập input  -->
+            <label for="quanlity" class="modal-lable">
+               <i class="ti-shopping-cart"></i>
+               Tickets, $15 per person
+            </label>
+            <input id="quanlity" type="text" class="modal-input" placeholder="How many?">
+
+            <label for="Email" class="modal-lable">
+               <i class="ti-user"></i>
+               Send To
+            </label>
+            <input id="Email" type="email" class="modal-input" placeholder="Email">
+
+            <button id="buy-tickets">
+               PAY
+               <i class="ti-check"></i>
+            </button>
+         </div>
+
+         <footer class="modal-footer">
+            <p class="modal-help">Need <a href="">help?</a></p>
+         </footer>
+      </div>
    </div>
 
 </body>
