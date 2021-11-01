@@ -1,12 +1,12 @@
-<h1 align="center">  LOVE MUSIC W3 ?Ž¸?Ž· </h1>
+<h1 align="center"> LOVE MUSIC W3 </h1>
 
 ---
 
-### ?‘‰ This is one of the small projects about learning HTML, CSS.
+### This is one of the small projects about learning HTML, CSS.
 
 ---
 
-##### - Table of learning through projects ???
+#### - Table of learning through projects.
 
 | Project        | Language  | Source   | Status |
 |:--------------:|:---------:|:--------:|:------:|
@@ -15,7 +15,7 @@
 | *`Web Store`*  | HTML, CSS | ...      | ...    |
 | ...            |           |          |        |
 
-##### - This is [*my website*](https://google.com)
+## This is [*my website*](https://google.com)
 
 > Some images from the web project [*love - music*](https://google.com)
 

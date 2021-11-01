@@ -1,0 +1,68 @@
+/* *PC */
+@media (min-width: 1024) {}
+
+/* *Tablet */
+@media (min-width: 741px) and (max-width: 1023px) {}
+
+/* *Mobile */
+@media (max-width: 740px) {
+
+   #header {
+      overflow: hidden;
+      /* Khi con của header vượt qua giới hạn của cha(46px) thì nó tự động ẩn đi */
+   }
+
+   #slider .text-content {
+      display: none;
+   }
+
+   #nav {
+      display: block;
+   }
+
+   #nav>li:first-child {
+      display: inline-block;
+   }
+
+   /* CSS cho phần tử <li> là con trực tiếp đầu tiên của <nav> */
+
+   #nav>li {
+      display: block;
+   }
+
+   /* Trải dài thẻ li 100 trên mobile(thang ngang contact ...) hướng đến trải nghiệm người dùng(UX) */
+
+   .btn {
+      width: 100%;
+   }
+
+   .pull-right {
+      /* float: right !important; */
+      margin-top: 10 px !important;
+      float: left !important;
+      height: 39 px;
+      margin-left: 4px;
+   }
+
+   #header .mobile-menu-btn {
+      display: block;
+   }
+
+   #header .search-btn {
+      display: none;
+   }
+
+   .s-col-full {
+      width: 100%;
+      margin-bottom: 16px;
+   }
+
+   .s-col-full-form {
+      width: 100%;
+      padding: 8px 8px 0 12px;
+   }
+
+   #content .member-img {
+      width: 60%;
+   }
+}

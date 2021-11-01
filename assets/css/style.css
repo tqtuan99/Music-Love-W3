@@ -44,10 +44,7 @@ html {
    background-color: #000;
    color: #fff;
    text-decoration: none;
-   display: inline-block;
    font-size: 14.5px;
-   text-align: center;
-   margin: 0 53px;
    cursor: pointer;
    border: none;
    margin-right: 8px;
@@ -80,10 +77,15 @@ html {
 
 .col-second {
    width: 50%;
+   margin-bottom: 8px;
 }
 
 .col-third {
    width: 33.33333333%;
+}
+
+.mt-16{
+   margin-top: 16px;
 }
 
 /* *Một khi đã dùng class col,row thì không dùng các thuộc tính ghè đề lại, vd: khi dùng col-second thì không css lại thuộc tính WIDTH
@@ -174,9 +176,24 @@ html {
    background-color: #f44336;
    cursor: pointer;
    /* re chuột vào đổi thành bàn tay và có background màu đỏ */
-
 }
 
+#header .mobile-menu-btn:hover {
+   background-color: #ccc;
+}
+
+#header .mobile-menu-btn:hover .menu-icon {
+   color: #000;
+}
+
+#header .mobile-menu-btn {
+   position: absolute;
+   top: 0;
+   right: 0;
+   display: none;
+}
+
+#header .mobile-menu-btn,
 #header .search-btn {
    float: right;
    /* Ép button search vào góc phải header */
@@ -184,6 +201,7 @@ html {
 
 }
 
+#header .menu-icon,
 #header .search-icon {
    line-height: 46px;
    color: #fff;
@@ -228,6 +246,7 @@ html {
 
 #content .content-section {
    width: 800px;
+   max-width: 100%;
    margin: auto auto;
    padding: 64px 16px;
 }
@@ -255,7 +274,7 @@ html {
 }
 
 #content .member-list {
-   padding: 32px 0;
+   padding: 16px 0;
    /* overflow: hidden: cũng để giải quyết tình trạng float: left */
 }
 
@@ -268,13 +287,13 @@ html {
 }
 
 #content .member-name {
-   margin: 15px 0;
+   font-weight: 400;
+   margin: 24px 0 16px 0;
    font-size: 15px;
 }
 
 #content .member-img {
    width: 154px;
-   height: 154px;
    border-radius: 7px;
    margin: 0 0 16px;
    /* *border-radius: tạo đường bo góc */
@@ -325,7 +344,7 @@ html {
 
 .places-list {
    /* margin: 0px -16px; thay thế bởi class row */
-   padding: 48px 8px;
+   padding: 48px 8px 32px;
    /* Kỹ thuật pha trộn margin âm và padding để cân bằng lề */
 }
 
@@ -349,7 +368,6 @@ html {
    /* transform: scale(1,1); */
    /* re chuột vào làm mờ ảnh 0.6 */
 }
-
 
 .place-body {
    color: #000;
@@ -387,7 +405,7 @@ html {
 
 .contact-form {
    font-size: 15px;
-   margin: 0 -8px 112px;
+   margin: 0 -4px 96px !important;
    padding: 0 0px;
 }
 
@@ -476,6 +494,9 @@ img {
    max-width: calc(100% - 120px);
    min-height: 200px;
    position: relative;
+   border-radius: 15px;
+   animation: modalFadeIn ease 0.5s;
+   /* !thuộc tính animation - tên keyframe(modalFaceIn) - kiểu chuyển động(ease) -  thời gian chạy (0.5s) */
 }
 
 .modal-close .ti-close {
@@ -485,6 +506,7 @@ img {
    color: #fff;
    padding: 12px;
    cursor: pointer;
+   border-radius: 15px;
 }
 
 .modal-close .ti-close:hover {
@@ -499,7 +521,8 @@ header.modal-header {
    align-items: center;
    justify-content: center;
    font-size: 30px;
-   color: #fff
+   color: #fff;
+   border-radius: 15px;
 }
 
 .modal-body {
@@ -517,6 +540,7 @@ label.modal-lable {
    width: 100%;
    padding: 11px;
    margin-bottom: 25px;
+   border-radius: 15px;
 }
 
 #buy-tickets {
@@ -526,7 +550,7 @@ label.modal-lable {
    background-color: #009688;
    border: 1px;
    color: #fff;
-   border-radius: 7px;
+   border-radius: 15px;
    cursor: pointer;
    font-weight: bolder;
 }
@@ -544,4 +568,19 @@ footer.modal-footer {
 .modal-footer a {
    text-decoration: none;
    color: blue;
+}
+
+/* *@keyframes: để tạo ra chuyển động liên tiếp để tạo ra animation(giống cơ chế chiếu phim 24 hình/giây) */
+@keyframes modalFadeIn {
+
+   /* from-to: Chuyển động từ đâu đến đâu from-to */
+   from {
+      opacity: 0;
+      transform: translateY(-570px);
+   }
+
+   to {
+      opacity: 1;
+      transform: translateY(0);
+   }
 }
