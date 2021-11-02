@@ -4,6 +4,34 @@
 /* *Tablet */
 @media (min-width: 741px) and (max-width: 1023px) {}
 
+/* *Tablet and mobile*/
+@media (max-width: 1023px) {
+
+   /* *fix UX để người dùng trải nghiệm thoải mái trên giao diện iPad và  (button, input, SĐT, email, link zoom to hơn để dễ dùng ) */
+   .btn {
+      padding: 15px 16px;
+   }
+
+   .contact-info {
+      line-height: 1.9;
+      font-size: 19px;
+   }
+
+   .contact-form .form-control {
+      padding: 13px;
+   }
+
+   #footer .item-list i {
+      margin: 0 8px;
+      font-size: 47px;
+   }
+
+   #footer .copyright {
+      font-size: 20px;
+      padding: 12px 0;
+   }
+}
+
 /* *Mobile */
 @media (max-width: 740px) {
 
@@ -22,6 +50,7 @@
 
    #nav>li:first-child {
       display: inline-block;
+      /* *inline-block: làm cho thẻ chạm đáy với thẻ phía trên thành 1 khói riêng khi padding */
    }
 
    /* CSS cho phần tử <li> là con trực tiếp đầu tiên của <nav> */

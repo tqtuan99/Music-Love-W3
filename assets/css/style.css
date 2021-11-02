@@ -212,7 +212,7 @@ html {
    margin-top: 46px;
    padding-top: 50%;
    /* *phần đệm phía trên bằng tổng 50% chiều rộng của chính nó */
-   background: url("/assets/img/slider/slider1.jpg") top center / cover no-repeat;
+   background: url("../img/slider/slider1.jpg") top center / cover no-repeat;
    position: relative;
 }
 
@@ -396,6 +396,13 @@ html {
 .contact-info {
    font-size: 18px;
    line-height: 1.7;
+}
+.contact-content .contact-info a {
+   text-decoration: none;
+}
+
+.contact-content .contact-info a:hover {
+   font-weight: bold;
 }
 
 .contact-info i {
