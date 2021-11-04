@@ -1,11 +1,11 @@
 /* *PC */
-@media (min-width: 1024) {}
+@media (min-width: 64em) {}
 
 /* *Tablet */
-@media (min-width: 741px) and (max-width: 1023px) {}
+@media (min-width: 46.3125em) and (max-width: 63.9375em) {}
 
 /* *Tablet and mobile*/
-@media (max-width: 1023px) {
+@media (max-width: 63.9375em) {
 
    /* *fix UX để người dùng trải nghiệm thoải mái trên giao diện iPad và  (button, input, SĐT, email, link zoom to hơn để dễ dùng ) */
    .btn {
@@ -37,7 +37,7 @@
 }
 
 /* *Mobile */
-@media (max-width: 740px) {
+@media (max-width: 46.25em) {
 
    #header {
       overflow: hidden;
