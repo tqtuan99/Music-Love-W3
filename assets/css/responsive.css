@@ -12,6 +12,10 @@
       padding: 15px 16px;
    }
 
+   .place-section {
+      width: 100%;
+   }
+
    .contact-info {
       line-height: 1.9;
       font-size: 19px;
@@ -23,7 +27,7 @@
 
    #footer .item-list i {
       margin: 0 8px;
-      font-size: 47px;
+      font-size: 35px;
    }
 
    #footer .copyright {
@@ -41,7 +45,18 @@
    }
 
    #slider .text-content {
-      display: none;
+      bottom: 15px;
+   }
+
+   #slider .text-heading {
+      font-weight: 400;
+      /* *Làm mỏng chữ */
+      font-size: 20px;
+   }
+   
+   #slider .text-description {
+      margin-top: 10px;
+      font-size: 10px;
    }
 
    #nav {
@@ -93,5 +108,6 @@
 
    #content .member-img {
       width: 60%;
+      height: auto;
    }
 }
