@@ -44,6 +44,22 @@
       /* Khi con của header vượt qua giới hạn của cha(46px) thì nó tự động ẩn đi */
    }
 
+   #nav .subnav {
+      position: initial;
+   }
+
+   #nav .subnav a {
+      padding: 0 42px;
+   }
+
+   #header .mobile-menu-btn {
+      display: block;
+   }
+
+   #header .search-btn {
+      display: none;
+   }
+
    #slider .text-content {
       bottom: 15px;
    }
@@ -86,14 +102,6 @@
       float: left !important;
       height: 39 px;
       margin-left: 4px;
-   }
-
-   #header .mobile-menu-btn {
-      display: block;
-   }
-
-   #header .search-btn {
-      display: none;
    }
 
    .s-col-full {

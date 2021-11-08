@@ -26,7 +26,7 @@
             <li><a href="#contact">Contact</a></li>
 
             <li>
-               <a href="#">
+               <a>
                   More
                   <i class="nav-arrow-down ti-angle-down"></i>
                </a>
@@ -274,89 +274,9 @@
       </div>
    </div>
 
-   <script>
-      // Silde Show
-      var myIndex = 0;
-      carousel();
+   <script src="./assets/javascript/main.js"></script>
 
-      function carousel() {
-         var i;
-         var x = document.getElementsByClassName("mySlides");
-         for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-         }
-         myIndex++;
-         if (myIndex > x.length) {
-            myIndex = 1
-         }
-         x[myIndex - 1].style.display = "block";
-         setTimeout(carousel, 2000); // Change image every 2 seconds
-      }
-
-      // MENU
-      var header = document.getElementById('header')
-      var mobileMenu = document.getElementById('mobile-menu')
-      var headerHeight = header.clientHeight;
-
-      //Đóng mở Menu of Mobile
-      mobileMenu.onclick = function () {
-         var isClose = header.clientHeight === headerHeight;
-         if (isClose) {
-            header.style.height = 'auto';
-         } else {
-            header.style.height = null;
-         }
-      }
-      //Tự động đóng khi chọn các đối tự trong menu.
-      var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
-      //lấy tự cả những thẻ <a> có href = #
-      for (var i = 0; i < menuItems.length; i++) {
-         var menuItem = menuItems[i];
-         menuItem.onclick = function () {
-            header.style.height = null;
-         }
-      }
-   </script>
-
-   <script>
-      const buyBtns = document.querySelectorAll('.js-buy-tickets')
-      const modal = document.querySelector('.js-modal')
-      const modalContainer = document.querySelector('.js-modal-container')
-      const modalClose = document.querySelector('.js-modal-close')
-      // *querySelector: bản thân khái niệm nó chỉ là 1 cái nên không dùng vòng lặp
-
-      function showBuyTickets() {
-         // *alert: show hộp thoại trên trình duyệt
-         modal.classList.add('open')
-         //gọi biến modal và add thêm class open và modal
-      }
-
-      function hideBuyTickets() {
-         modal.classList.remove('open')
-         //gọi biến modalClose và hide(ẩn) class open của modal đi hay còn gọi là ẩn MODAL
-      }
-
-      for (const buyBtn of buyBtns) {
-         buyBtn.addEventListener('click', showBuyTickets)
-         // * Khi click vào buyBtn(button buy tickets) thì sẽ họi hàm showBuyTickets
-      }
-
-      modalClose.addEventListener('click', hideBuyTickets)
-      // * Khi click vào modalClose(button close) thì sẽ họi hàm showBuyTickets
-
-      modal.addEventListener('click', hideBuyTickets)
-      // * Khi click vào khoảng không Modal thì sẽ tắt modal-container 
-      // *(nhưng do modal-container(class con) nó nằm trong modal nên khi nhấn vào bất kỳ thứ gì trong modal(class cha) thì class cha sẽ nghe --> cũng sẽ ẩn modal-container )
-      // --> Hiện tương nổi bột trong web (Khi tác động 1 hành vi vào 1 thẻ nào đó thì hành vi đó ví như bong bóng dưới đáy hồ, nó sẽ nổi dần lên qua các thẻ cha cho đến khi hết thì thôi )
-
-      // --> Giải pháp: ràn buộc cho nổi bột tới đâu (cụ thể trong này mình sẽ cho nổi bột tới modal-container là hiện tượng này sẽ mất)
-      modalContainer.addEventListener('click', function (even) {
-         // viết thằng hàm vào sự kiện thì không cần đặt tên
-         // Biến even: sự click vào 1 hành vi diễn ra luôn trả về 1 even, ngăn chặn hành vi mặc định(ngừng nổi bột từ modal-container)
-         even.stopPropagation()
-         // * thực chất hành vi nổi bật vẫn xảy ra, nhưng nó nổi qua tất cả các thẻ cha đến khi tới class modal-container thì sẽ stop hành vi nổi bột
-      })
-   </script>
+   <script src="./assets/javascript/modal-javascript.js"></script>
 
 </body>
 
